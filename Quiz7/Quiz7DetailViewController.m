@@ -47,6 +47,11 @@
     [self configureView];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -59,11 +64,6 @@
     [self.detailItem setUrgency:[self.slider value]];
     [self.detailItem setDueDate:[self.date date]];
     [self.presentingViewController dismissViewControllerAnimated:NO completion:dismissBlock];
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField resignFirstResponder];
-    return YES;
 }
 
 @end

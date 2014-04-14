@@ -11,7 +11,7 @@
 
 @interface Quiz7DetailViewController : UIViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) Task *detailItem;
+@property (strong, nonatomic) Task * detailItem;
 @property (nonatomic, copy) void (^dismissBlock)(void);
 - (IBAction)save:(id)sender;
 

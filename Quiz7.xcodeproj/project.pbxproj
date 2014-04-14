@@ -55,7 +55,7 @@
 		9966276818F2E8E900E6D242 /* Quiz7MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz7MasterViewController.h; sourceTree = "<group>"; };
 		9966276918F2E8E900E6D242 /* Quiz7MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7MasterViewController.m; sourceTree = "<group>"; };
 		9966276B18F2E8E900E6D242 /* Quiz7DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quiz7DetailViewController.h; sourceTree = "<group>"; };
-		9966276C18F2E8E900E6D242 /* Quiz7DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quiz7DetailViewController.m; sourceTree = "<group>"; };
+		9966276C18F2E8E900E6D242 /* Quiz7DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Quiz7DetailViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		9966276E18F2E8E900E6D242 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9966277418F2E8E900E6D242 /* Quiz7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quiz7Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9966277518F2E8E900E6D242 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -479,6 +479,7 @@
 				9966278818F2E8EA00E6D242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9966278918F2E8EA00E6D242 /* Build configuration list for PBXNativeTarget "Quiz7Tests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				9966278B18F2E8EA00E6D242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

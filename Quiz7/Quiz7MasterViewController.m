@@ -7,7 +7,7 @@
 //
 
 #import "Quiz7MasterViewController.h"
-
+#import "Task.h"
 #import "Quiz7DetailViewController.h"
 
 @interface Quiz7MasterViewController ()
@@ -132,14 +132,14 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dueDate" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -227,7 +227,7 @@
     cell.textLabel.text = [[object valueForKey:@"name"] description];
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     [df setDateStyle:NSDateFormatterShortStyle];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %f",[df stringFromDate:[object dueDate]],[object urgency]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%.0f)",[df stringFromDate:object.dueDate],object.urgency];
 }
 
 @end
